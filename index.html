@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic metadata for SEO and mobile responsiveness -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Ivy & Lantern – A unique blend of British cuisine and warm atmosphere. Visit us today!">
+  <meta name="keywords" content="British cuisine, restaurant, dining, modern food, reservations, The Ivy & Lantern">
+  <meta name="author" content="Eryk Mazurek">
+
+  <!-- Open Graph metadata for social sharing (Facebook, etc.) -->
+  <meta property="og:title" content="The Ivy & Lantern – British Cuisine & Atmosphere">
+  <meta property="og:description" content="Experience our warm and cozy restaurant with modern British dishes. Reserve your table today!">
+  <meta property="og:image" content="https://twojadomena.pl/images/og-image.jpg">
+  <meta property="og:url" content="https://twojadomena.pl/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Ivy & Lantern">
+  <meta name="twitter:description" content="Warm atmosphere, modern British cuisine – book your visit now!">
+  <meta name="twitter:image" content="https://twojadomena.pl/images/twitter-card.jpg">
+
+  <title>The Ivy & Lantern</title>
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="image/logo.png" sizes="16x16">
+
+  <!-- Animation and icon libraries -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Font Awesome Icons (replace 'your_site_kit' with your own kit ID) -->
+  <script src="https://kit.fontawesome.com/your_site_kit.js" crossorigin="anonymous"></script>
+
+  <!-- Swiper CSS for image slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+  <!-- Preloader shown before the page fully loads -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+  <!-- Header with logo and navigation menu -->
+  <header>
+    <!-- Mobile menu toggle button -->
+    <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-bar">☰</button>
+
+    <!-- Main navigation bar -->
+    <nav id="nav-bar" role="navigation" aria-label="Main navigation">
+      <!-- Site logo -->
+      <img src="image/logo.png" alt="The Ivy & Lantern Restaurant Logo">
+
+      <!-- Navigation links to page sections -->
+      <a href="#home"><i class="fas fa-home"></i> Home</a>
+      <a href="#about_us"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="#menu"><i class="fas fa-utensils"></i> Menu</a>
+      <a href="#book_table"><i class="fas fa-calendar-check"></i> Book a Table</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="#news"><i class="fas fa-newspaper"></i> News</a>
+    </nav>
+  </header>
+
+  <!-- Main content area -->
+  <main>
+
+    <!-- Hero section with welcome message -->
+    <section id="home" data-aos="fade-in">
+      <h1 id="home-title">Welcome to The Ivy & Lantern</h1>
+      <p>Your destination for modern British cuisine in a cozy atmosphere.</p>
+      <a href="#book_table">Book Now</a>
+    </section>
+
+    <!-- About Us section with history and ambiance description -->
+    <section id="about_us" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p><strong>The Ivy & Lantern</strong> – where taste meets passion! Since 2006, we've been creating unforgettable dining experiences with fresh, high-quality ingredients and a modern twist on classic British dishes.</p>
+      <p>Whether it's a romantic dinner, a family gathering, or a casual lunch with friends, our cozy interior, friendly staff, and live music make every visit special.</p>
+      <p><strong>Opening Hours:</strong> Daily from <b>10:00 a.m. to 10:00 p.m.</b></p>
+    </section>
+
+    <!-- Menu section highlighting signature dishes -->
+    <section id="menu" data-aos="fade-up">
+      <h2>Our Menu</h2>
+      <ul>
+        <li><strong>Fish & Chips</strong> – Beer-battered cod, hand-cut fries, mushy peas</li>
+        <li><strong>Beef Wellington</strong> – Prime beef tenderloin wrapped in puff pastry</li>
+        <li><strong>Vegetarian Pie</strong> – Seasonal vegetables with creamy sauce in flaky crust</li>
+        <li><strong>Sticky Toffee Pudding</strong> – Served with warm caramel and vanilla ice cream</li>
+      </ul>
+      <p>Full menu available in-house. Ask our staff about seasonal specials!</p>
+    </section>
+
+    <!-- Gallery section presenting photos of the restaurant -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Explore our cozy interior and delicious dishes through our gallery</p>
+
+      <!-- Swiper slider for image gallery -->
+    <div class="Swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="image/in1.png" alt="1"></div>
+        <div class="swiper-slide"><img src="image/in2.png" alt="2"></div>
+        <div class="swiper-slide"><img src="image/in3.png" alt="3"></div>
+        <div class="swiper-slide"><img src="image/Fish & Chips.png" alt="Fish & Chips"></div>
+        <div class="swiper-slide"><img src="image/Beef Wellington.png" alt="Beef Wellington"></div>
+        <div class="swiper-slide"><img src="image/Vegetarian Pie.png" alt="Vegetarian Pie"></div>
+        <div class="swiper-slide"><img src="image/Sticky Toffee Pudding.png" alt="Sticky Toffee Pudding"></div>
+      </div>
+
+      <!-- Pagination for the slider -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+    </section>
+
+    <!-- Reservation section with booking form -->
+    <section id="book_table" data-aos="fade-up">
+      <h2>Book a Table</h2>
+
+      <!-- Google reCAPTCHA integration -->
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+      <!-- Reservation form -->
+      <form action="php/reservation.php" method="post" role="form" aria-labelledby="book-table-heading">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="^\+?[0-9\s\-]{7,15}$" required><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Number of guests (1–20)" required><br>
+
+        <label for="time">Select time (10:00 AM – 10:00 PM):</label>
+        <input type="time" id="time" name="time" min="10:00" max="22:00" required><br>
+
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes" placeholder="Any special requests..."></textarea><br>
+
+        <!-- 
+          🔐 reCAPTCHA integration (Google anti-spam protection)
+          Replace 'your_site_key' with your own site key from:
+          https://www.google.com/recaptcha/admin/create
+
+          1. Go to the link above and register your domain.
+          2. Choose reCAPTCHA v2 ("I'm not a robot" checkbox).
+          3. After registration, copy the "Site Key" and paste it below.
+          4. You also need the "Secret Key" in your backend script (e.g. reservation.php).
+        -->
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+        <input type="submit" class="btn-animate" value="Book Now">
+        <p id="form-success">✔ Reservation submitted!</p>
+      </form>
+    </section>
+
+    <!-- Contact details section -->
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      <p>Phone: +48 123 456 789</p>
+      <p>Address: 123 Main St, City, Country</p>
+      <p>Opening Hours: Mon–Sun 10:00 – 22:00</p>
+    </section>
+
+    <!-- News section with recent updates -->
+    <section id="news" data-aos="fade-up">
+      <h2>Latest News</h2>
+      <article>
+        <h3>Summer Specials Now Available!</h3>
+        <p>Join us for our limited-time summer menu featuring fresh, seasonal ingredients and unique cocktails.</p>
+      </article>
+      <article>
+        <h3>Live Jazz Every Friday Night</h3>
+        <p>Experience live jazz music every Friday from 7 PM to 10 PM. Book early!</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Site footer -->
+  <footer>
+    <p>&copy; 2025 Eryk Mazurek</p>
+  </footer>
+
+  <!-- Initialize AOS and GSAP animations -->
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    gsap.from("#home-title", { duration: 1.5, y: -50, opacity: 0, ease: "power2.out" });
+  </script>
+
+  <!-- Swiper JS for image slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Custom site scripts -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
